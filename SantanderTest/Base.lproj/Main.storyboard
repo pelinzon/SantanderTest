@@ -756,7 +756,9 @@
         <scene sceneID="m9S-Ld-yCI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rXg-Nu-3Kf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Investimento" id="M5Y-wN-PrF"/>
+                    <tabBarItem key="tabBarItem" title="Investimento" id="M5Y-wN-PrF">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="X3o-Yi-BkD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -779,7 +781,9 @@
         <scene sceneID="r2a-UU-wzG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gnr-Gz-v5H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contato" id="wDh-vh-Bh5"/>
+                    <tabBarItem key="tabBarItem" title="Contato" id="wDh-vh-Bh5">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="77e-tQ-cfA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
