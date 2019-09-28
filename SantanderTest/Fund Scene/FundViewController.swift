@@ -66,12 +66,15 @@ class FundViewController: UIViewController, FundDisplayLogic
   {
     super.viewDidLoad()
     doSomething()
+
   }
-  
+
   // MARK: Do something
   
   //@IBOutlet weak var nameTextField: UITextField!
-  
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var scrollContentView: UIView!
+
   func doSomething()
   {
     let request = Fund.Something.Request()
@@ -82,4 +85,8 @@ class FundViewController: UIViewController, FundDisplayLogic
   {
     //nameTextField.text = viewModel.name
   }
+}
+
+extension FundViewController: UIScrollViewDelegate {
+
 }
