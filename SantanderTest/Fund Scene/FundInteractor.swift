@@ -8,30 +8,22 @@
 
 import UIKit
 
-protocol FundBusinessLogic
-{
-  func doSomething(request: Fund.Something.Request)
+protocol FundBusinessLogic {
+    func refreshData()
 }
 
-protocol FundDataStore
-{
-  //var name: String { get set }
-}
+class FundInteractor: FundBusinessLogic {
 
-class FundInteractor: FundBusinessLogic, FundDataStore
-{
-  var presenter: FundPresentationLogic?
-  var worker: FundWorker?
-  //var name: String = ""
-  
-  // MARK: Do something
-  
-  func doSomething(request: Fund.Something.Request)
-  {
-    worker = FundWorker()
-    worker?.doSomeWork()
-    
-    let response = Fund.Something.Response()
-    presenter?.presentSomething(response: response)
-  }
+    var presenter: FundPresentationLogic?
+    var worker = FundWorker()
+
+    func refreshData() {
+
+        print("Reached Interactor")
+        let url = "https://floating-mountain-50292.herokuapp.com/fund.json"
+
+        worker.queryInfo(from: url, completion: { decodedData in
+            self.presenter!.updateView(with: decodedData)
+        })
+    }
 }

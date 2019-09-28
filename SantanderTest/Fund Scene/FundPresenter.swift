@@ -8,20 +8,19 @@
 
 import UIKit
 
-protocol FundPresentationLogic
-{
-  func presentSomething(response: Fund.Something.Response)
+protocol FundPresentationLogic {
+    func updateView(with data: FundModel)
 }
 
-class FundPresenter: FundPresentationLogic
-{
-  weak var viewController: FundDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentSomething(response: Fund.Something.Response)
-  {
-    let viewModel = Fund.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
+class FundPresenter: FundPresentationLogic {
+
+    var viewController: FundDisplayLogic?
+
+    func updateView(with data: FundModel) {
+        print("Reached Presenter")
+
+        DispatchQueue.main.async {
+            self.viewController?.updateView(with: data)
+        }
+    }
 }

@@ -8,19 +8,10 @@
 
 import UIKit
 
-protocol FormPresentationLogic
-{
-  func presentSomething(response: Form.Something.Response)
+protocol FormPresentationLogic {
+//  func presentSomething(response: Form.Something.Response)
 }
 
-class FormPresenter: FormPresentationLogic
-{
+class FormPresenter: FormPresentationLogic {
   weak var viewController: FormDisplayLogic?
-
-  
-  func presentSomething(response: Form.Something.Response)
-  {
-    let viewModel = Form.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
 }

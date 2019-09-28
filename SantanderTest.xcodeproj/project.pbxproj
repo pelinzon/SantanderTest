@@ -15,14 +15,10 @@
 		AE1B91CB23395FE9007E24B4 /* SantanderTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1B91CA23395FE9007E24B4 /* SantanderTestTests.swift */; };
 		AEE9DEF5233B0F49004E0633 /* FundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DEEF233B0F49004E0633 /* FundPresenter.swift */; };
 		AEE9DEF6233B0F49004E0633 /* FundWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DEF0233B0F49004E0633 /* FundWorker.swift */; };
-		AEE9DEF7233B0F49004E0633 /* FundRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DEF1233B0F49004E0633 /* FundRouter.swift */; };
-		AEE9DEF8233B0F49004E0633 /* FundModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DEF2233B0F49004E0633 /* FundModels.swift */; };
 		AEE9DEF9233B0F49004E0633 /* FundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DEF3233B0F49004E0633 /* FundViewController.swift */; };
 		AEE9DEFA233B0F49004E0633 /* FundInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DEF4233B0F49004E0633 /* FundInteractor.swift */; };
 		AEE9DF03233B0F74004E0633 /* FormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DEFD233B0F74004E0633 /* FormPresenter.swift */; };
 		AEE9DF04233B0F74004E0633 /* FormWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DEFE233B0F74004E0633 /* FormWorker.swift */; };
-		AEE9DF05233B0F74004E0633 /* FormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DEFF233B0F74004E0633 /* FormRouter.swift */; };
-		AEE9DF06233B0F74004E0633 /* FormModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DF00233B0F74004E0633 /* FormModels.swift */; };
 		AEE9DF07233B0F74004E0633 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DF01233B0F74004E0633 /* FormViewController.swift */; };
 		AEE9DF08233B0F74004E0633 /* FormInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9DF02233B0F74004E0633 /* FormInteractor.swift */; };
 		AEEEF6F3233D7C53002EA9EC /* FundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEEF6F2233D7C53002EA9EC /* FundModel.swift */; };
@@ -70,14 +66,10 @@
 		AE1B91CC23395FE9007E24B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEE9DEEF233B0F49004E0633 /* FundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundPresenter.swift; sourceTree = "<group>"; };
 		AEE9DEF0233B0F49004E0633 /* FundWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundWorker.swift; sourceTree = "<group>"; };
-		AEE9DEF1233B0F49004E0633 /* FundRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundRouter.swift; sourceTree = "<group>"; };
-		AEE9DEF2233B0F49004E0633 /* FundModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundModels.swift; sourceTree = "<group>"; };
 		AEE9DEF3233B0F49004E0633 /* FundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundViewController.swift; sourceTree = "<group>"; };
 		AEE9DEF4233B0F49004E0633 /* FundInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundInteractor.swift; sourceTree = "<group>"; };
 		AEE9DEFD233B0F74004E0633 /* FormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenter.swift; sourceTree = "<group>"; };
 		AEE9DEFE233B0F74004E0633 /* FormWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormWorker.swift; sourceTree = "<group>"; };
-		AEE9DEFF233B0F74004E0633 /* FormRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRouter.swift; sourceTree = "<group>"; };
-		AEE9DF00233B0F74004E0633 /* FormModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModels.swift; sourceTree = "<group>"; };
 		AEE9DF01233B0F74004E0633 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		AEE9DF02233B0F74004E0633 /* FormInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInteractor.swift; sourceTree = "<group>"; };
 		AEEEF6E9233D7B2B002EA9EC /* DINEngschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINEngschriftStd.otf; sourceTree = "<group>"; };
@@ -175,8 +167,6 @@
 			children = (
 				AEE9DEEF233B0F49004E0633 /* FundPresenter.swift */,
 				AEE9DEF0233B0F49004E0633 /* FundWorker.swift */,
-				AEE9DEF1233B0F49004E0633 /* FundRouter.swift */,
-				AEE9DEF2233B0F49004E0633 /* FundModels.swift */,
 				AEE9DEF3233B0F49004E0633 /* FundViewController.swift */,
 				AEE9DEF4233B0F49004E0633 /* FundInteractor.swift */,
 				AEEEF6F2233D7C53002EA9EC /* FundModel.swift */,
@@ -189,8 +179,6 @@
 			children = (
 				AEE9DEFD233B0F74004E0633 /* FormPresenter.swift */,
 				AEE9DEFE233B0F74004E0633 /* FormWorker.swift */,
-				AEE9DEFF233B0F74004E0633 /* FormRouter.swift */,
-				AEE9DF00233B0F74004E0633 /* FormModels.swift */,
 				AEE9DF01233B0F74004E0633 /* FormViewController.swift */,
 				AEE9DF02233B0F74004E0633 /* FormInteractor.swift */,
 				AEEEF6F4233D7C5C002EA9EC /* FormModel.swift */,
@@ -317,19 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEE9DEF8233B0F49004E0633 /* FundModels.swift in Sources */,
 				AE1B91B423395FE8007E24B4 /* AppDelegate.swift in Sources */,
 				AEE9DEF5233B0F49004E0633 /* FundPresenter.swift in Sources */,
 				AEE9DEF6233B0F49004E0633 /* FundWorker.swift in Sources */,
 				AEE9DEF9233B0F49004E0633 /* FundViewController.swift in Sources */,
-				AEE9DEF7233B0F49004E0633 /* FundRouter.swift in Sources */,
 				AE1B91B623395FE8007E24B4 /* SceneDelegate.swift in Sources */,
-				AEE9DF05233B0F74004E0633 /* FormRouter.swift in Sources */,
 				AEE9DEFA233B0F49004E0633 /* FundInteractor.swift in Sources */,
 				AEE9DF03233B0F74004E0633 /* FormPresenter.swift in Sources */,
 				AEEEF6F3233D7C53002EA9EC /* FundModel.swift in Sources */,
 				AEE9DF04233B0F74004E0633 /* FormWorker.swift in Sources */,
-				AEE9DF06233B0F74004E0633 /* FormModels.swift in Sources */,
 				AEE9DF08233B0F74004E0633 /* FormInteractor.swift in Sources */,
 				AEE9DF07233B0F74004E0633 /* FormViewController.swift in Sources */,
 				AEEEF6F5233D7C5C002EA9EC /* FormModel.swift in Sources */,

@@ -8,9 +8,5 @@
 
 import UIKit
 
-class FormWorker
-{
-  func doSomeWork()
-  {
-  }
+class FormWorker {
 }
