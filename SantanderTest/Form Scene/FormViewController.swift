@@ -71,8 +71,22 @@ class FormViewController: UIViewController, FormDisplayLogic
   // MARK: Do something
   
   //@IBOutlet weak var nameTextField: UITextField!
-  
-  func doSomething()
+    @IBOutlet var thankYouView: UIView!
+
+    @IBAction func checkboxPressed(_ sender: UIButton) {
+        sender.isSelected.toggle()
+    }
+
+    @IBAction func sendButtonPressed() {
+        // verify fields & clear upon submission
+        view.addSubview(thankYouView)
+    }
+
+    @IBAction func newMessageButtonPressed() {
+        thankYouView.removeFromSuperview()
+    }
+
+    func doSomething()
   {
     let request = Form.Something.Request()
     interactor?.doSomething(request: request)

@@ -194,7 +194,7 @@ Multimercado</string>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNw-KP-aeX">
                                                                 <rect key="frame" x="60" y="0.0" width="59" height="6"/>
-                                                                <color key="backgroundColor" red="0.4549019608" green="0.85490196080000003" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="0.29019607843137252" green="0.75686274509803919" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="59" id="Oj7-0n-f7c"/>
                                                                     <constraint firstAttribute="height" constant="6" id="wAN-Gj-NCb"/>
@@ -202,7 +202,7 @@ Multimercado</string>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dav-bY-0gX">
                                                                 <rect key="frame" x="120" y="0.0" width="59" height="6"/>
-                                                                <color key="backgroundColor" red="0.4549019608" green="0.85490196080000003" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="1" green="0.75294117647058822" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="6" id="3ca-P5-cyh"/>
                                                                     <constraint firstAttribute="width" constant="59" id="RAg-Az-RYL"/>
@@ -210,7 +210,7 @@ Multimercado</string>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5V-ut-Xkx">
                                                                 <rect key="frame" x="180" y="0.0" width="59" height="6"/>
-                                                                <color key="backgroundColor" red="0.4549019608" green="0.85490196080000003" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="1" green="0.45490196078431372" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="59" id="jew-nB-cpj"/>
                                                                     <constraint firstAttribute="height" constant="6" id="jfK-pL-UU7"/>
@@ -218,7 +218,7 @@ Multimercado</string>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BQ-6F-Mtu">
                                                                 <rect key="frame" x="240" y="0.0" width="59" height="6"/>
-                                                                <color key="backgroundColor" red="0.4549019608" green="0.85490196080000003" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="1" green="0.21176470588235294" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="59" id="hGW-AX-VWc"/>
                                                                     <constraint firstAttribute="height" constant="6" id="ing-u8-j4z"/>
@@ -502,9 +502,6 @@ Multimercado</string>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1167" id="2kp-2A-Wfr"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -535,7 +532,7 @@ Multimercado</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abY-of-1gE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2980" y="-531.63418290854577"/>
+            <point key="canvasLocation" x="2980" y="-596"/>
         </scene>
         <!--Contato-->
         <scene sceneID="79R-zH-Kol">
@@ -545,22 +542,166 @@ Multimercado</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq1-My-jOO">
-                                <rect key="frame" x="168" y="323" width="40" height="21"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8fL-Ri-RTn">
+                                <rect key="frame" x="29" y="71" width="316" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome completo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq1-My-jOO">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="sample text" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eet-3C-t4b">
+                                        <rect key="frame" x="1" y="29" width="284" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvl-NV-kiU">
+                                        <rect key="frame" x="1" y="56" width="315" height="1"/>
+                                        <color key="backgroundColor" red="0.68627450980000004" green="0.66274509800000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ZSs-Tq-UEW"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tf-BP-gat">
+                                        <rect key="frame" x="296" y="30" width="20" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Clear Text Field Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4CT-BO-yv7">
+                                <rect key="frame" x="29" y="146" width="316" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixp-Wn-XH8">
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="sample text" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zH5-KK-ucx">
+                                        <rect key="frame" x="1" y="29" width="284" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jyu-cD-An7">
+                                        <rect key="frame" x="1" y="56" width="315" height="1"/>
+                                        <color key="backgroundColor" red="0.68627450980000004" green="0.66274509800000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="6aE-1D-usf"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOs-p5-HGd">
+                                        <rect key="frame" x="296" y="30" width="20" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Clear Text Field Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IZy-R5-GrJ">
+                                <rect key="frame" x="29" y="222" width="316" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telefone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fud-QV-iAD">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="sample text" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86Z-2B-qcf">
+                                        <rect key="frame" x="1" y="29" width="284" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aA5-cT-Wvd">
+                                        <rect key="frame" x="1" y="56" width="315" height="1"/>
+                                        <color key="backgroundColor" red="0.68627450980000004" green="0.66274509800000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="9cY-Vb-sIP"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIl-QZ-er0">
+                                        <rect key="frame" x="296" y="30" width="20" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Clear Text Field Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mik-IL-ToJ">
+                                <rect key="frame" x="29" y="304" width="295" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="   Gostaria de cadastrar meu email" image="Checkbox Deselected">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <state key="selected" image="Checkbox Selected"/>
+                                <connections>
+                                    <action selector="checkboxPressed:" destination="nTb-5m-jYu" eventType="touchUpInside" id="QCf-ow-s1X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbY-L0-ArR">
+                                <rect key="frame" x="36" y="449" width="303" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Enviar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendButtonPressed" destination="nTb-5m-jYu" eventType="touchUpInside" id="0Zh-pi-egj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PIh-MI-SMe"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contato" largeTitleDisplayMode="never" id="wPf-le-NVj"/>
+                    <connections>
+                        <outlet property="thankYouView" destination="ZKB-Kj-DYS" id="aVc-Sj-nrX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPj-Ay-li3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="ZKB-Kj-DYS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Obrigado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwC-vC-sZh">
+                            <rect key="frame" x="151" y="170" width="72" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mensagem enviada com sucesso :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4I-JT-PN0">
+                            <rect key="frame" x="53" y="199" width="269" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVn-zo-2yC">
+                            <rect key="frame" x="108" y="389" width="158" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Enviar nova mensagem"/>
+                            <connections>
+                                <action selector="newMessageButtonPressed" destination="nTb-5m-jYu" eventType="touchUpInside" id="P2v-xV-3cV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <viewLayoutGuide key="safeArea" id="ChG-08-vBZ"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="2980" y="641"/>
+            <point key="canvasLocation" x="2980" y="1137"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hhO-he-lpZ">
@@ -603,7 +744,7 @@ Multimercado</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8We-Jj-7kc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2041" y="-531"/>
+            <point key="canvasLocation" x="2041" y="-595"/>
         </scene>
         <!--Contato-->
         <scene sceneID="r2a-UU-wzG">
@@ -627,10 +768,13 @@ Multimercado</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9xf-Ph-Ho6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2041" y="641"/>
+            <point key="canvasLocation" x="2041" y="904"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Checkbox Deselected" width="19" height="19"/>
+        <image name="Checkbox Selected" width="19" height="19"/>
+        <image name="Clear Text Field Button" width="20" height="20"/>
         <image name="Divider" width="315" height="7"/>
         <image name="Down Arrow" width="14" height="8"/>
         <image name="Download Button" width="13" height="13"/>
