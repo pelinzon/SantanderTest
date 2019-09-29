@@ -41,6 +41,7 @@
 		AEEEF705233D99F0002EA9EC /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEEEF6EB233D7B2B002EA9EC /* DINPro-Light.otf */; };
 		AEEEF706233D99F0002EA9EC /* DINPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEEEF6F1233D7B2C002EA9EC /* DINPro-Medium.otf */; };
 		AEEEF707233D99F0002EA9EC /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEEEF6EF233D7B2C002EA9EC /* DINPro-Regular.otf */; };
+		AEEEF70E2340299D002EA9EC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEEF70D2340299D002EA9EC /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		AEEEF6F1233D7B2C002EA9EC /* DINPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Medium.otf"; sourceTree = "<group>"; };
 		AEEEF6F2233D7C53002EA9EC /* FundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundModel.swift; sourceTree = "<group>"; };
 		AEEEF6F4233D7C5C002EA9EC /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
+		AEEEF70D2340299D002EA9EC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				AEE9DEFC233B0F61004E0633 /* Form Scene */,
 				AEE9DEFB233B0F51004E0633 /* Fund Scene */,
+				AEEEF70C23402982002EA9EC /* Extensions */,
 				AEE9DEEC233B0ED0004E0633 /* Fonts */,
 				AE1B91B323395FE8007E24B4 /* AppDelegate.swift */,
 				AE1B91B523395FE8007E24B4 /* SceneDelegate.swift */,
@@ -184,6 +187,14 @@
 				AEEEF6F4233D7C5C002EA9EC /* FormModel.swift */,
 			);
 			path = "Form Scene";
+			sourceTree = "<group>";
+		};
+		AEEEF70C23402982002EA9EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AEEEF70D2340299D002EA9EC /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 				AE1B91B423395FE8007E24B4 /* AppDelegate.swift in Sources */,
 				AEE9DEF5233B0F49004E0633 /* FundPresenter.swift in Sources */,
 				AEE9DEF6233B0F49004E0633 /* FundWorker.swift in Sources */,
+				AEEEF70E2340299D002EA9EC /* UIViewExtension.swift in Sources */,
 				AEE9DEF9233B0F49004E0633 /* FundViewController.swift in Sources */,
 				AE1B91B623395FE8007E24B4 /* SceneDelegate.swift in Sources */,
 				AEE9DEFA233B0F49004E0633 /* FundInteractor.swift in Sources */,

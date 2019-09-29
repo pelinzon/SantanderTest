@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 protocol FundDisplayLogic: class {
     func updateView(with data: FundModel)
@@ -74,7 +75,8 @@ class FundViewController: UIViewController, FundDisplayLogic {
     @IBOutlet weak var investButton: UIButton!
 
     @IBAction func downloadInfo(_ sender: UIButton) {
-        print("download button tapped")
+        let url = URL(string: "https://www.google.com")!
+        present(SFSafariViewController(url: url), animated: true)
     }
 
     @IBAction func investButtonPressed(_ sender: UIButton) {
@@ -93,7 +95,6 @@ class FundViewController: UIViewController, FundDisplayLogic {
     var presenter = FundPresenter()
 
     func updateView(with data: FundModel) {
-        print("Reached Controller Ending")
         viewTitle.text = data.screen.title
         fundName.text = data.screen.fundName
         whatIs.text = data.screen.whatIs
@@ -109,6 +110,7 @@ class FundViewController: UIViewController, FundDisplayLogic {
             mediumRiskArrow.alpha = 1
         case 4:
             highRiskArrow.alpha = 1
+            highRiskHeightConstraint.constant = 10
         case 5:
             veryHighRiskArrow.alpha = 1
         default:
@@ -155,15 +157,15 @@ class FundViewController: UIViewController, FundDisplayLogic {
 
 
     // MARK: View Lifecycle
-
     override func viewDidLoad() {
         presenter.viewController = self
         interactor.presenter = presenter
         investButton.layer.cornerRadius = 25
+        veryLowRisk.round(corners: [.bottomLeft, .topLeft], radius: 3)
+        veryHighRisk.round(corners: [.bottomRight, .topRight], radius: 3)
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        print("Reached Controller Beginning")
         interactor.refreshData()
     }
 }

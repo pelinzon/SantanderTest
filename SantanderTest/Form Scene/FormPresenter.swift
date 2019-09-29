@@ -9,9 +9,16 @@
 import UIKit
 
 protocol FormPresentationLogic {
-//  func presentSomething(response: Form.Something.Response)
+    func updateView(with data: FormModel)
 }
 
 class FormPresenter: FormPresentationLogic {
+
   weak var viewController: FormDisplayLogic?
+
+    func updateView(with data: FormModel) {
+        DispatchQueue.main.async {
+            self.viewController?.updateView(with: data)
+        }
+    }
 }

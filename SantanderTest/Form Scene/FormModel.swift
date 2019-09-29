@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct FormModel: Decodable {
+    let cells: [Cell]
+}
+
+struct Cell: Decodable {
+    let message: String
+}

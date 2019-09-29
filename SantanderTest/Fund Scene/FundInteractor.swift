@@ -18,10 +18,7 @@ class FundInteractor: FundBusinessLogic {
     var worker = FundWorker()
 
     func refreshData() {
-
-        print("Reached Interactor")
         let url = "https://floating-mountain-50292.herokuapp.com/fund.json"
-
         worker.queryInfo(from: url, completion: { decodedData in
             self.presenter!.updateView(with: decodedData)
         })

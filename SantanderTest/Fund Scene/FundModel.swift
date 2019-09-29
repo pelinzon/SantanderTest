@@ -26,16 +26,16 @@ struct Screen: Decodable {
 }
 
 struct MoreInfo: Decodable {
-    let month: Investimento
-    let year: Investimento
-    let last12Months : Investimento
+    let month: Earnings
+    let year: Earnings
+    let last12Months : Earnings
 
     private enum CodingKeys : String, CodingKey {
         case month, year, last12Months = "12months"
     }
 }
 
-struct Investimento: Decodable {
+struct Earnings: Decodable {
     let fund: Double
     let CDI: Double
 }

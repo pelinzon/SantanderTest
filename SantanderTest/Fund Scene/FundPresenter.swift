@@ -17,8 +17,6 @@ class FundPresenter: FundPresentationLogic {
     var viewController: FundDisplayLogic?
 
     func updateView(with data: FundModel) {
-        print("Reached Presenter")
-
         DispatchQueue.main.async {
             self.viewController?.updateView(with: data)
         }

@@ -10,7 +10,6 @@ import UIKit
 
 class FundWorker {
     func queryInfo(from url: String, completion: @escaping (_ decodedData: FundModel) -> Void) {
-        print("Reached Worker")
 
         guard let url = URL(string: url) else {
             return
