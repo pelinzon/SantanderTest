@@ -687,12 +687,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Contato" largeTitleDisplayMode="never" id="wPf-le-NVj"/>
                     <connections>
+                        <outlet property="emailDivider" destination="jyu-cD-An7" id="4Gn-Ov-fRT"/>
                         <outlet property="emailFieldTitle" destination="Ixp-Wn-XH8" id="oOi-Ya-qav"/>
                         <outlet property="emailTextField" destination="zH5-KK-ucx" id="utu-gL-Oco"/>
+                        <outlet property="nameDivider" destination="cvl-NV-kiU" id="r5o-R5-VrZ"/>
                         <outlet property="nameFieldTitle" destination="pq1-My-jOO" id="OAe-zu-6hT"/>
                         <outlet property="nameTextField" destination="eet-3C-t4b" id="ieK-EF-Fm4"/>
                         <outlet property="newsletterButton" destination="Mik-IL-ToJ" id="psc-8H-VxB"/>
                         <outlet property="sendButton" destination="jbY-L0-ArR" id="Shr-o9-D1a"/>
+                        <outlet property="telephoneDivider" destination="aA5-cT-Wvd" id="96w-hD-SBf"/>
                         <outlet property="telephoneFieldTitle" destination="fud-QV-iAD" id="DdD-AN-BZ5"/>
                         <outlet property="telephoneTextField" destination="86Z-2B-qcf" id="JIj-Kq-vcp"/>
                         <outlet property="thankYouView" destination="ZKB-Kj-DYS" id="aVc-Sj-nrX"/>

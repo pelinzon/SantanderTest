@@ -40,21 +40,4 @@ class FormInteractor: FormBusinessLogic {
         return emailPred.evaluate(with: email)
     }
 
-//    func telIsValid(_ tel: String) -> String {
-//        let telNumber = tel.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
-//        let mask = "(XX) XXXXX-XXXX"
-//
-//        var formattedTelNumber = ""
-//        var index = telNumber.startIndex
-//        for char in mask where index < telNumber.endIndex {
-//            if char == "X" {
-//                formattedTelNumber.append(telNumber[index])
-//                index = telNumber.index(after: index)
-//            } else {
-//                formattedTelNumber.append(char)
-//            }
-//        }
-//        return formattedTelNumber
-//    }
-
 }

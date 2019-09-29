@@ -24,6 +24,10 @@ class FormViewController: UIViewController, FormDisplayLogic {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var telephoneTextField: UITextField!
 
+    @IBOutlet weak var nameDivider: UIView!
+    @IBOutlet weak var emailDivider: UIView!
+    @IBOutlet weak var telephoneDivider: UIView!
+
     @IBOutlet var thankYouView: UIView!
     @IBOutlet weak var sendButton: UIButton!
 
@@ -32,7 +36,31 @@ class FormViewController: UIViewController, FormDisplayLogic {
     }
 
     @IBAction func sendMessageButtonPressed(_ sender: UIButton) {
-        if interactor.allFieldsAreValid(name: nameTextField.text ?? "", email: emailTextField.text ?? "", tel: telephoneTextField.text ?? "") {
+
+        var allAreValid = true
+
+        if nameTextField.text != "" {
+            nameDivider.backgroundColor = #colorLiteral(red: 0.3960784314, green: 0.7450980392, blue: 0.1882352941, alpha: 1)
+        } else {
+            nameDivider.backgroundColor = #colorLiteral(red: 1, green: 0.1215686275, blue: 0.1215686275, alpha: 1)
+            allAreValid = false
+        }
+
+        if interactor.emailIsValid(emailTextField.text ?? "") {
+            emailDivider.backgroundColor = #colorLiteral(red: 0.3960784314, green: 0.7450980392, blue: 0.1882352941, alpha: 1)
+        } else {
+            emailDivider.backgroundColor = #colorLiteral(red: 1, green: 0.1215686275, blue: 0.1215686275, alpha: 1)
+            allAreValid = false
+        }
+
+        if telephoneTextField.text?.count == 9 {
+            telephoneDivider.backgroundColor = #colorLiteral(red: 0.3960784314, green: 0.7450980392, blue: 0.1882352941, alpha: 1)
+        } else {
+            telephoneDivider.backgroundColor = #colorLiteral(red: 1, green: 0.1215686275, blue: 0.1215686275, alpha: 1)
+            allAreValid = false
+        }
+
+        if allAreValid {
             UIView.animate(withDuration: 0.25, animations: {
                 sender.alpha = 0.6
                 sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
@@ -59,11 +87,15 @@ class FormViewController: UIViewController, FormDisplayLogic {
     let interactor = FormInteractor()
     let presenter = FormPresenter()
 
+
+    // MARK: View Lifecycle
     override func viewDidLoad() {
          super.viewDidLoad()
          presenter.viewController = self
          interactor.presenter = presenter
          sendButton.layer.cornerRadius = 25
+
+        telephoneTextField.delegate = self
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tap.cancelsTouchesInView = false
@@ -91,6 +123,10 @@ class FormViewController: UIViewController, FormDisplayLogic {
         emailTextField.text = ""
         telephoneTextField.text = ""
         newsletterButton.isSelected = false
+
+        nameDivider.backgroundColor = #colorLiteral(red: 0.6745098039, green: 0.6745098039, blue: 0.6745098039, alpha: 1)
+        emailDivider.backgroundColor = #colorLiteral(red: 0.6745098039, green: 0.6745098039, blue: 0.6745098039, alpha: 1)
+        telephoneDivider.backgroundColor = #colorLiteral(red: 0.6745098039, green: 0.6745098039, blue: 0.6745098039, alpha: 1)
     }
 
     func showThankYouView() {
@@ -104,3 +140,16 @@ class FormViewController: UIViewController, FormDisplayLogic {
         ])
     }
 }
+
+extension FormViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let formattedString = (textField.text! as NSString).replacingCharacters(in: range, with: string)
+
+        if formattedString.count > 9 {
+            return false
+        } else {
+            return true
+        }
+    }
+}
+

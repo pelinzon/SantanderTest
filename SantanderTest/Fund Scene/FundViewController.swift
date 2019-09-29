@@ -155,7 +155,6 @@ class FundViewController: UIViewController, FundDisplayLogic {
         consentTermName.text = data.screen.downInfo[4].name
     }
 
-
     // MARK: View Lifecycle
     override func viewDidLoad() {
         presenter.viewController = self
