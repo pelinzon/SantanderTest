@@ -598,7 +598,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zH5-KK-ucx">
                                 <rect key="frame" x="32" y="169" width="311" height="24"/>
                                 <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyu-cD-An7">
                                 <rect key="frame" x="32" y="201" width="311" height="1"/>
@@ -616,7 +616,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="86Z-2B-qcf">
                                 <rect key="frame" x="32" y="249" width="311" height="24"/>
                                 <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aA5-cT-Wvd">
                                 <rect key="frame" x="32" y="279" width="311" height="1"/>
@@ -688,10 +688,13 @@
                     <navigationItem key="navigationItem" title="Contato" largeTitleDisplayMode="never" id="wPf-le-NVj"/>
                     <connections>
                         <outlet property="emailFieldTitle" destination="Ixp-Wn-XH8" id="oOi-Ya-qav"/>
+                        <outlet property="emailTextField" destination="zH5-KK-ucx" id="utu-gL-Oco"/>
                         <outlet property="nameFieldTitle" destination="pq1-My-jOO" id="OAe-zu-6hT"/>
+                        <outlet property="nameTextField" destination="eet-3C-t4b" id="ieK-EF-Fm4"/>
                         <outlet property="newsletterButton" destination="Mik-IL-ToJ" id="psc-8H-VxB"/>
                         <outlet property="sendButton" destination="jbY-L0-ArR" id="Shr-o9-D1a"/>
                         <outlet property="telephoneFieldTitle" destination="fud-QV-iAD" id="DdD-AN-BZ5"/>
+                        <outlet property="telephoneTextField" destination="86Z-2B-qcf" id="JIj-Kq-vcp"/>
                         <outlet property="thankYouView" destination="ZKB-Kj-DYS" id="aVc-Sj-nrX"/>
                     </connections>
                 </viewController>
